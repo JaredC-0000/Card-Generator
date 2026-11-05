@@ -14,8 +14,8 @@ public class Perks {
     public static final Perk ADAPTABLE = createPerk("+1 Defense for each instance of damage taken");
 
 
-    record Perk(String description){}
     public static Perk createPerk(String description) {
         return new Perk(description);
     }
+    record Perk(String description){}
 }
