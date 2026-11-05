@@ -1,7 +1,7 @@
 # Card Generator
 In Progress
 
-To [Portfolio](https://github.com/JaredC-0000/Portfolio)
+To Portfolio: [Click Here](https://github.com/JaredC-0000/Portfolio)
 
 ## Purpose:
 To explore component driven design
