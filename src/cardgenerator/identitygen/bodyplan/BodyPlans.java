@@ -56,6 +56,8 @@ public class BodyPlans {
             , StatWeightContainer statWeightContainer
     ) {}
 
+    private interface BodyPlanComponent{};
+
 
 
 
@@ -72,7 +74,9 @@ public class BodyPlans {
             int speed,
             int spirit,
             int constitution
-    ) {}
+    ) implements BodyPlanComponent {}
+
+
 
     protected static PerkContainer addPerks(Perks.Perk... perks) {
         return new PerkContainer(perks);
@@ -87,7 +91,7 @@ public class BodyPlans {
         return bodyPlan.perkContainer.perks[perkIndex];
     }
 
-    private record PerkContainer(Perks.Perk... perks) {}
+    private record PerkContainer(Perks.Perk... perks) implements BodyPlanComponent {}
 
 
 }
